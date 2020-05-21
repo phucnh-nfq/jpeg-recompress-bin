@@ -28,3 +28,5 @@ before_install:
   - git fetch --all
   - git checkout tags/v2.2.0
   - make && sudo make install
+script:
+  - npm install && npm test
