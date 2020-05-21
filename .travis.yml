@@ -29,5 +29,7 @@ before_install:
   - git checkout tags/v2.2.0
   - make && sudo make install
   - cd ..
+  - rm -rf mozjpeg
+  - rm -rf jpeg-archive
 script:
-  - npm install && npm test
+  - npm test
